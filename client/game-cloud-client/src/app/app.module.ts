@@ -3,18 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SimpleRacerComponent } from './modules/simple-racer/container/simple-racer.component';
-import { HomeComponent } from './modules/home/container/home.component';
+import { SimpleRacerModule } from './modules/simple-racer/simple-racer.module';
+import { AlienInvasionModule } from './modules/alien-invasion/alien-invasion.module';
+import { HomeModule } from './modules/home/home.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent,
-    SimpleRacerComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HomeModule,
+    AlienInvasionModule,
+    SimpleRacerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

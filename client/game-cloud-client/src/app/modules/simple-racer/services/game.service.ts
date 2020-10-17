@@ -175,8 +175,9 @@ export class GameService {
       carBottom > componentTop
     ) {
       clearInterval(this.gameLoop);
-      alert('Game Over');
-      window.location.reload();
+
+      //alert('Game Over');
+      //window.location.reload();
     }
   }
 

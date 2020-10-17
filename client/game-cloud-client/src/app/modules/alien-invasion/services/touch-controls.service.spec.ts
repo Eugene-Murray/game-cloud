@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { TestService } from './test.service';
+import { TouchControlsService } from './touch-controls.service';
 
-describe('TestService', () => {
-  let service: TestService;
+describe('TouchControlsService', () => {
+  let service: TouchControlsService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(TestService);
+    service = TestBed.inject(TouchControlsService);
   });
 
   it('should be created', () => {

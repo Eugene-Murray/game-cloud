@@ -8,7 +8,6 @@ import {
 
 import { AppService } from './../services/app.service';
 import { GameService } from './../services/game.service';
-import { TestService } from './../services/test.service';
 
 @Component({
   selector: 'app-simple-racer',
@@ -21,7 +20,6 @@ export class SimpleRacerComponent implements AfterViewInit {
   showLoader = true;
 
   constructor(
-    private testService: TestService,
     private appService: AppService,
     private gameService: GameService
   ) {}
